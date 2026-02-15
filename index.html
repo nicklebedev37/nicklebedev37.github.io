@@ -112,8 +112,8 @@
     const rightIsland = { x: world.width - 113, y: 560, w: 105, h: 160 };
 
     const platformRows = [
-      { y: 470, count: 5 },
-      { y: 355, count: 5 }
+      { y: 500, count: 5 },
+      { y: 430, count: 5 }
     ];
 
     let platforms = [];
@@ -156,7 +156,7 @@
         const chunk = laneWidth / row.count;
 
         for (let i = 0; i < row.count; i++) {
-          const w = rand(52, 82);
+          const w = rand(62, 98);
           const minX = laneStart + i * chunk + 5;
           const maxX = laneStart + (i + 1) * chunk - w - 5;
           const baseX = Math.max(minX, Math.min(maxX, rand(minX, maxX)));
